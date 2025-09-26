@@ -1,0 +1,78 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(185, 183, 183);
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: flex;
+
+    h1 {
+        margin: 0.5rem 1rem;
+    }
+}
+
+#grid {
+    display: flex;
+    margin: 5rem;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    #grid {
+        margin: 2rem;
+        gap: 2rem
+    }
+}
+
+img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+}
+
+p>b {
+    font-weight: bold;
+}
+
+#prosjekt {
+    margin-top: 3rem;
+    display: flex;
+    gap: 0.3rem;
+}
+
+#prosjekt>div {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    white-space: nowrap;
+    border-radius: 25px;
+    display: flex;
+
+
+    img {
+        margin: 0.3rem;
+        width: 20px;
+        height: 20px;
+    }
+
+    p {
+        margin: 0;
+        margin: 0.3rem;
+    }
+}
